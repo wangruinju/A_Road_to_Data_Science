@@ -1,0 +1,106 @@
+---
+title: "Data Science"
+author: "Rui Wang"
+date: "2018/03/15"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# Probability and Statistics
+
+--
+
+- [Statistical Inference](https://www.amazon.com/Statistical-Inference-George-Casella/dp/0534243126)
+    
+    * Probability and Basic Statistics: Chapter 1-5
+    * Hypothesis Testing: Chapter 6-12
+--
+
+- [MIT: Introduction to Probability and Statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/)
+    
+    * [Youtube Video List](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+--
+
+- [A Green Book: A Practical Guide to Quantitative Finance Interview](https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662)
+    
+    * Data Science: Chapter 4
+
+--
+
+- [Cheat Sheet](https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf)
+    
+    * Cover Most of Knowledge Points
+---
+
+# Coding
+
+
+--- 
+
+# Machine Learning
+
+
+---
+
+# SQL
+
+--
+
+- Sturcture
+
+    ```
+    select ... from ... 
+    where ...
+    group by ... having ... 
+    order by ... limit ...
+    ```
+--
+
+- [Intro To Database](https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about)
+    
+    * [Pratice Questions](https://github.com/wangruinju/SQL_Resources/blob/master/Stanford%20SQL%20practice/SQL%20exercise.Rmd)
+    
+--
+
+- Online Platforms
+    
+    * [Leetcode DataBase](https://leetcode.com/problemset/database/) 
+    * [Hackerrank](https://www.hackerrank.com/)
+    * [Vertabelo Acedemy](https://academy.vertabelo.com/)
+
+---
+
+# SQL
+
+--
+
+- [Analytical Cases](https://community.modeanalytics.com/sql/tutorial/sql-business-analytics-training/)
+    
+    * Invertigating a Drop in User Engagement
+    * Understanding Search Functionality
+    * Validating A/B Test Results
+
+--
+
+- Reference
+
+    * [W3Schools](https://www.w3schools.com/SQl/default.asp)
+
+---
+
+# Case Study
+
+--- 
+
+# How to Summarize
+
+--- 
