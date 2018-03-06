@@ -108,14 +108,36 @@ options(htmltools.dir.version = FALSE)
 
 --
 
-- Sturcture
+- PRIMARY KEY
+
+    * Uniquely identify each record in a database table
+    * Cannot contain NULL values
+    * Only one PRIMARY KEY
+    
+--
+
+- FOREIGN KEY 
+
+    * Used to link two tables together
+    * Can contain NULL values
+    * Refer to the PRIMARY KEY
+
+--
+
+- Structure
 
     ```
     select ... from ... 
+    join ... on ...
     where ...
     group by ... having ... 
-    order by ... limit ...
+    order by ... 
     ```
+
+---
+
+# SQL
+
 --
 
 - [Intro To Database](https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about)
@@ -129,11 +151,7 @@ options(htmltools.dir.version = FALSE)
     * [Leetcode DataBase](https://leetcode.com/problemset/database/) 
     * [Hackerrank](https://www.hackerrank.com/)
     * [Vertabelo Acedemy](https://academy.vertabelo.com/)
-
----
-
-# SQL
-
+    
 --
 
 - [Analytical Cases](https://community.modeanalytics.com/sql/tutorial/sql-business-analytics-training/)
@@ -150,11 +168,70 @@ options(htmltools.dir.version = FALSE)
 
 ---
 
-# Coding
+# SQL
+
+- Content Type
+
+    table: content_id | content_type (comment/ post) | target_id
+
+    * If it is comment, target_id is the user_id who posts it.
+    * If it is post, then target_id is NULL.
+    
+    What is the distribution of comments?
+
+--
+    
+        ```
+        select cnt, count(cnt) as freq
+        from
+            (select content_id, count(target_id) cnt 
+            from table 
+            group by content_id) a 
+        group by cnt;
+        ```
 
 ---
 
-# Maching Learning
+# Coding
+
+- Python
+
+    * [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
+    * [Google Python Course](https://developers.google.com/edu/python/)
+    * [MIT: Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/)
+        * [Youtube Video List](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+        
+--
+
+- [Leetcode](https://leetcode.com/problemset/algorithms/)
+
+    * [My Python Solution](https://github.com/wangruinju/Rui_Python_Leetcode)
+    
+--
+
+.pull-left[
+* Part I
+    * Linked List
+    * Binary Search
+    * Two Points
+    * Bit Manipulation
+    * Math
+    * Stack
+    * Hash Table]
+    
+.pull-right[
+* Part II
+    * Backtrack
+    * Tree
+    * DFS
+    * BFS
+    * String
+    * Array
+    * Dynamic Programming]
+    
+---
+
+# Machine Learning
 
 ---
 
