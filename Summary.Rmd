@@ -15,7 +15,19 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-# Probability and Statistics
+# Outline
+
+### Probability
+### Statistics
+### SQL
+### Coding
+### Machine Learning
+### Case Studies
+### How to Summarize
+
+---
+
+# Probability
 
 --
 
@@ -23,11 +35,13 @@ options(htmltools.dir.version = FALSE)
     
     * Probability and Basic Statistics: Chapter 1-5
     * Hypothesis Testing: Chapter 6-12
+
 --
 
 - [MIT: Introduction to Probability and Statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/)
     
     * [Youtube Video List](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+
 --
 
 - [A Green Book: A Practical Guide to Quantitative Finance Interview](https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662)
@@ -37,17 +51,32 @@ options(htmltools.dir.version = FALSE)
 --
 
 - [Cheat Sheet](https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf)
-    
+
     * Cover Most of Knowledge Points
+
 ---
 
-# Coding
+# Probability
 
+--
 
---- 
+- Cards
 
-# Machine Learning
+    * What is probability of getting one pair of card from a deck of 52 cards? 
+--
+    3/51
+--
+    * What is probability of getting two cards in the same suit from a deck of 52 cards? 
+--
+    12/51
+--
+    * What’s the probability of getting two cards that are not in the same suit and not a pair from a deck of 52 cards?
+--
+    36/51
 
+---
+
+# Statistics
 
 ---
 
@@ -97,10 +126,18 @@ options(htmltools.dir.version = FALSE)
 
 ---
 
-# Case Study
+# Coding
 
---- 
+---
+
+# Maching Learning
+
+---
+
+# Case Studies
+
+---
 
 # How to Summarize
 
---- 
+
