@@ -22,90 +22,12 @@ class: center, middle, inverse, title-slide
 
 # Outline
 
+### SQL
 ### Probability
 ### Statistics
-### SQL
 ### Coding
 ### Machine Learning
 ### Case Studies
-### How to Summarize
-
----
-
-# Probability
-
---
-
-- [Statistical Inference](https://www.amazon.com/Statistical-Inference-George-Casella/dp/0534243126)
-    
-    * Probability and Basic Statistics: Chapter 1-5
-    * Hypothesis Testing: Chapter 6-12
-
---
-
-- [MIT: Introduction to Probability and Statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/)
-    
-    * [Youtube Video List](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-
---
-
-- [A Green Book: A Practical Guide to Quantitative Finance Interview](https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662)
-    
-    * Data Science: Chapter 4
-
---
-
-- [Cheat Sheet](https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf)
-
-    * Cover Most of Knowledge Points
-
----
-
-# Probability
-
---
-
-- Cards
-
-    What is probability of getting one pair of card from a deck of 52 cards? 
---
-    3/51
-
---
-    What is probability of getting two cards in the same suit from a deck of 52 cards? 
---
-    12/51
-
---
-    What’s the probability of getting two cards that are not in the same suit and not a pair from a deck of 52 cards?
---
-    36/51
---
-- Coins
-
-    You randomly draw a coin from 100 coins - 1 unfair coin (head-head), 99 fair coins (head-tail) and roll it 10 times. If the result is 10 heads, whats the probability that the coin is unfair?
---
-
-    `\(\frac{1/100}{1/100*1 + 99/100*(1/2)^{10}} = \frac{1024}{1033}\)`
-        
-
----
-
-# Probability
-
-- Seattle Raining
-
-    You’re about to get on a plane to Seattle. You want to know if you should bring an umbrella. You call 3 random friends of yours who live there and ask each independently if it’s raining. Each of your friends has a 2/3 chance of telling you the truth and a 1/3 chance of messing with you by lying. All 3 friends tell you that “Yes” it is raining. What is the probability that it’s actually raining in Seattle?
---
-
-    p denotes the probablity of raining at Seattle, then we will have the conditional probablity as
-    `$$\frac{(2/3)^3*p}{(2/3)^3*p + (1/3)^3*(1-p)}$$`
---    
-    If `\(p = 1/4\)`, we have the answer as 8/11.
-
----
-
-# Statistics
 
 ---
 
@@ -197,7 +119,147 @@ class: center, middle, inverse, title-slide
 
 ---
 
-# Coding
+---
+
+# Probability
+
+--
+
+- [Statistical Inference](https://www.amazon.com/Statistical-Inference-George-Casella/dp/0534243126)
+    
+    * Probability and Basic Statistics: Chapter 1-5
+    * Hypothesis Testing: Chapter 6-12
+
+--
+
+- [MIT: Introduction to Probability and Statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/)
+    
+    * [Youtube Video List](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+
+--
+
+- [A Green Book: A Practical Guide to Quantitative Finance Interview](https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662)
+    
+    * Data Science: Chapter 4
+
+--
+
+- [Cheat Sheet](https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf)
+
+    * Cover Most of Knowledge Points
+
+---
+
+# Probability
+
+--
+
+- Cards
+
+    What is probability of getting one pair of card from a deck of 52 cards? 
+--
+    3/51
+
+--
+    What is probability of getting two cards in the same suit from a deck of 52 cards? 
+--
+    12/51
+
+--
+    What’s the probability of getting two cards that are not in the same suit and not a pair from a deck of 52 cards?
+--
+    36/51
+--
+- Coins
+
+    You randomly draw a coin from 100 coins - 1 unfair coin (head-head), 99 fair coins (head-tail) and roll it 10 times. If the result is 10 heads, whats the probability that the coin is unfair?
+--
+
+    `\(\frac{1/100}{1/100*1 + 99/100*(1/2)^{10}} = \frac{1024}{1033}\)`
+        
+
+---
+
+# Probability
+
+- Seattle Raining
+
+    You’re about to get on a plane to Seattle. You want to know if you should bring an umbrella. You call 3 random friends of yours who live there and ask each independently if it’s raining. Each of your friends has a 2/3 chance of telling you the truth and a 1/3 chance of messing with you by lying. All 3 friends tell you that “Yes” it is raining. What is the probability that it’s actually raining in Seattle?
+--
+
+    p denotes the probablity of raining at Seattle, then we will have the conditional probablity as
+    `$$\frac{(2/3)^3*p}{(2/3)^3*p + (1/3)^3*(1-p)}$$`
+--    
+    If `\(p = 1/4\)`, we have the answer as 8/11.
+
+---
+
+# Probability
+
+- Birthday
+
+    There are 30 people in a class. What is the probablity of at least two people who have the same birthday?
+
+--
+    Think the opposite the questions about the probablity of all the people who have different birthdays.
+    
+    `\(P = 1 - \frac{365*364*...*336}{365^{30}}\)`
+    
+    What is the probabily of that there are exactly two people who have the same birthday? (similar to card problems like suit and pair)
+
+--
+    Choose one pair out of 30 people and assign one out of 365 days to their birthday. Then consider the probablity of the rest 28 people who have different birthdays.
+    
+    `\(P = \frac{\binom{30}{2}*365*364*...*337}{365^{30}}\)`
+    
+---
+
+# Statistics
+
+- Linear regression
+    
+    - Assumptions: linearity, independence, homogeneity and normality
+    - Inference and interpretation
+    - Issues like outlier and multicollinearity
+    
+- Logistics regression
+
+    - Invalid assumptions compared with linear regression
+    - Interpretation
+    
+- Hypothesis testing
+
+    - p value, `\(H_0\)`, `\(H_1\)`, type I error, type II error, power
+    - Confidence intervals
+
+- Online course
+
+    - [Biostatistics Module](http://sphweb.bumc.bu.edu/otlt/mph-modules/menu/)
+---
+
+# Coding - Data Wrangling Using Pandas
+
+- Basics
+    - Selection
+    - Missing values
+    - String
+    - Merge
+    - Groupby
+    - Plot
+    - Time series
+    - Data in/out
+
+- Resources
+
+    - [Python for Data Analysis](https://github.com/wesm/pydata-book)
+    
+    - [Pandas Documentation](https://pandas.pydata.org/)
+
+    - [Pandas Exercises](https://github.com/guipsamora/pandas_exercises)
+
+---
+
+# Coding - Data Structure Using Python
 
 - Python
 
@@ -238,13 +300,52 @@ class: center, middle, inverse, title-slide
 
 # Machine Learning
 
+- Basics
+    - Supervise learning vs unsupervise learning
+    - Linear regression
+    - Logistics regression and Linear Discriminat Analysis
+    - Cross validation and bootstraping
+    - Regularization: l1/l2
+    - Tree models: CART/Random Forest/Gradient Boosting Tree
+    - SVM and kernels
+    - Clustering: k-means, gaussian mixture model and hierarchical methods
+    - PCA for data reductation
+    
+- Resources
+    - [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)
+    - [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+    - [Andrew Ng: Maching Learning on Coursera](https://www.coursera.org/learn/machine-learning/home/welcome) and [My solution](https://github.com/wangruinju/Machine-Learning-Coursera)
+    - [CS229: Maching Learning](http://cs229.stanford.edu/)
+    - [Hunag-yi Lee videos](https://www.youtube.com/playlist?list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49)
+    - [Other great videos](https://www.youtube.com/playlist?list=PLaXDtXvwY-oDvedS3f4HW0b4KxqpJ_imw)
+    
 ---
 
 # Case Studies
 
+- Structure
+    - Define the business problems
+    - Make plan for the analysis
+    - Segment data
+    - Summarize the insights
+    - Make business decisions
+    
+- Methods
+    - Segment analysis
+    - Trend analysis
+    - Funnel analysis
+    - User behavior analysis
+    - Retention analysis 
+    - AB test: sample size/effect size/significant level/power/potential issues
+
+- Resources
+    - [A/B Testing on Udacity](https://www.udacity.com/course/ab-testing--ud257)
+    - [Design of Experiments](https://onlinecourses.science.psu.edu/stat503/node/1)
+    - [A/B testing articles](https://engineering.linkedin.com/blog/topic/ab-testing)
+
 ---
 
-# How to Summarize
+# All of these are part of my preparation for data science interviews. I was encouraged by a lot of my friends at the beginning and now I am willing to introduce my limited experience to people who are in need. Cheers!
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
